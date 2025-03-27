@@ -1,5 +1,5 @@
 /* -----------------------------------------
-  Have focus outline only for keyboard users 
+  enfocar outline solo para usuaruios con teclado 
  ---------------------------------------- */
 
 const handleFirstTab = (e) => {
