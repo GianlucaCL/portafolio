@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,13 +8,51 @@
 
   <!-- título de la página (no la q c ve) -->
   <title>
-    Gianluca Contenla | Data Scientist - Ingeniero Informático
+    Gianluca Contenla | IA aplicada al negocio y fundador de TechAI Summit
   </title>
 
-  <meta name="description" content="Página portafolio personal">
+  <meta name="description" content="Portafolio de Gianluca Contenla: IA aplicada al negocio, desarrollo de software y TechAI Summit.">
   <!-- puedo agregar coding keyboard aquí depue: (React, CSS etc) -->
-  <meta name="keywords" content="Data Science, Data Scientist, Ingeniero Informático, Inversor, Portafolio" />
+  <meta name="keywords" content="Inteligencia Artificial, AI Engineer, LLM, Data Science, Python, Next.js, TechAI Summit, Portafolio" />
   <link rel="stylesheet" href="index.css" />
+  <style>
+    /* Galería con pie de foto para la sección de TechAI Summit */
+    .work__gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gutter-small);
+    }
+    .work__figure {
+      margin: 0;
+    }
+    .work__figure .work__image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    .work__figure .work__image--top {
+      object-position: center 20%;
+    }
+    .work__figure--wide {
+      grid-column: 1 / -1;
+    }
+    .work__figure .work__image--podcast {
+      aspect-ratio: 16 / 9;
+      object-position: center 30%;
+    }
+    .work__figure figcaption {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      opacity: 0.8;
+    }
+    @media (max-width: 500px) {
+      .work__gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -38,7 +76,7 @@
           <span>Gianluca Contenla</span>
         </h1>
         <!-- pequeña descripción -->
-        <p>Data Scientist - Ingeniero Informático.</p>
+        <p>Perfil técnico-comercial en IA aplicada al negocio. Fundador de TechAI Summit.</p>
         <a href="#contact" class="btn btn--pink">Contacto</a>
       </div>
     </div>
@@ -57,12 +95,11 @@
           <div class="about__text">
             <!-- mi bio -->
             <p>
-              Soy Data Scientist formado en la UDD y actualmente trabajo en IBM Chile en el área de Ecosystem, además soy estudiante de Ingeniería en Informática en la UM.<br><br>
-Apasionado por la tecnología y la inteligencia artificial, me motiva resolver problemas reales mediante soluciones innovadoras. Mi principal expertise es en SQL y Python para el desarrollo de modelos de IA.<br><br>
-Cada año ayudo a organizar FILCE, la feria de logística más grande del país, lo que me ha permitido desarrollar habilidades de liderazgo y gestión de eventos a gran escala.<br><br>
-Me gustan los desafíos, lo que me hizo interesarme en las inversiones. Tengo un perfil de riesgo alto en la bolsa de valores y experiencia en inversión inmobiliaria renta corta, siempre atento a tendencias y oportunidades de alto potencial.<br><br>
-También soy políglota: hablo español, inglés, portugués y lengua de señas chilena, y sigo aprendiendo nuevos idiomas.<br><br>
-Si quieres conocer más sobre mi trabajo, puedes contactarme o solicitar mi CV acá abajo.
+Soy un perfil técnico-comercial que implementa IA y automatización aplicadas al negocio. Fui AI Engineer en Samsung Electronics Chile, donde formé parte del equipo fundador del área de IA, y antes trabajé en el equipo de Ecosystem de IBM Chile.<br><br>
+Fundé y dirijo TechAI Summit, un congreso de IA y tecnología que en su primera edición tuvo más de 4.000 inscritos y reunió a gerentes de Google, Microsoft, AWS, Oracle, IBM y otras empresas líderes. También co-organizo FILCE, la mayor feria logística de Chile.<br><br>
+Me formé en Ingeniería en Informática en la Universidad Mayor y como Data Scientist en la UDD. Trabajo principalmente con Python, SQL, LLMs y agentes de IA, y me gusta llevar las soluciones de punta a punta: desde entender el problema hasta dejarlas funcionando.<br><br>
+Hablo español, inglés, portugués y lengua de señas chilena.<br><br>
+Si quieres conocer más sobre mi trabajo, escríbeme acá abajo.
             </p>
             <!--link cv -->
 <a href="#contact" class="btn">Contáctame</a>
@@ -89,18 +126,71 @@ Si quieres conocer más sobre mi trabajo, puedes contactarme o solicitar mi CV a
           <!-- cada div aki con work__box class es un proyecto diferente. -->
 <div class="work__box">
   <div class="work__text">
-    <h3>Intern IBM</h3>
+    <h3>Founder &amp; CEO, TechAI Summit</h3>
     <p>
-IBM es una compañía tecnológica global con 114 años en el mercado y que lidera el sector de TI en Chile. <br>
-En IBM Chile, me encuentro trabajando en el equipo de Ecosystem en la gestión de relaciones con Business Partners.<br>
-He participado en iniciativas de análisis de mercado y desarrollo de modelos de IA para la automatización de procesos.<br>
-Desarrollé un modelo de IA usando watsonx que identifica oportunidades de negocio en el mercado público, generando un impacto significativo en los resultados comerciales de la empresa.<br>
-Esta experiencia me ha permitido fortalecer habilidades técnicas, así como competencias en trabajo colaborativo, tecnología y relaciones comerciales.
+Fundé y dirijo TechAI Summit, el congreso de IA y tecnología que reúne a gerentes generales y líderes regionales de big tech.<br>
+La primera edición tuvo más de 4.000 inscritos y fue el segundo evento tecnológico de Chile en asistentes por jornada, con 35 empresas y 25 speakers, incluidos gerentes de Google, Microsoft, AWS, Oracle, IBM, Huawei, Buk y Deloitte, y la visita de la Ministra de Ciencia y Tecnología.<br>
+Gestioné la venta de stands, la negociación con auspiciadores y el marketing digital, y desarrollé la web del evento con un chatbot de IA. Además, cofundé TechAI Podcast, donde participé como co-conductor: un programa de entrevistas sobre IA a gerentes de grandes empresas tecnológicas.
+    </p>
+    <ul class="work__list">
+      <li>Liderazgo</li>
+      <li>Negociación</li>
+      <li>Next.js</li>
+      <li>IA</li>
+    </ul>
+
+    <div class="work__links">
+      <a href="https://techaisummit.cl/" target="_blank" class="link__text">
+        Visita la web del evento <span>&rarr;</span>
+      </a>
+    </div>
+    <div class="work__links" style="margin-top: 1rem;">
+      <a href="https://diariomayor.cl/creando-universidad/futuro-ingeniero-um-reunira-a-los-lideres-tecnologicos-en-el-techai-summit-2026/" target="_blank" class="link__text">
+        Lee la nota en el diario <span>&rarr;</span>
+      </a>
+      <a href="https://diariomayor.cl/creando-universidad/futuro-ingeniero-um-reunira-a-los-lideres-tecnologicos-en-el-techai-summit-2026/" title="Nota en Diario Mayor" target="_blank">
+        <img src="./images/news.svg" class="work__code" alt="Diario Mayor">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <div class="work__gallery">
+      <figure class="work__figure">
+        <img src="./images/techai1.jpg" class="work__image" alt="Gianluca Contenla dando el discurso de bienvenida en TechAI Summit" />
+        <figcaption>Discurso de bienvenida en la primera edición de TechAI Summit.</figcaption>
+      </figure>
+      <figure class="work__figure">
+        <img src="./images/techai2.jpg" class="work__image" alt="Gianluca Contenla junto a Cristian López, Country Manager de Google Cloud" />
+        <figcaption>Con Cristian López, Country Manager de Google Cloud, tras su keynote.</figcaption>
+      </figure>
+      <figure class="work__figure">
+        <img src="./images/techai3.jpg" class="work__image work__image--top" alt="Gianluca Contenla junto a la Ministra de Ciencia, Tecnología, Conocimiento e Innovación" />
+        <figcaption>Con la Ministra de Ciencia, Tecnología, Conocimiento e Innovación.</figcaption>
+      </figure>
+      <figure class="work__figure">
+        <img src="./images/techai4.jpg" class="work__image" alt="Más de 1.000 asistentes en el salón principal de TechAI Summit" />
+        <figcaption>Más de 1.000 personas en el salón principal del evento.</figcaption>
+      </figure>
+      <figure class="work__figure work__figure--wide">
+        <img src="./images/techai5.jpg" class="work__image work__image--podcast" alt="Gianluca Contenla en TechAI Podcast con Patricio Cofré de EY y Verónica Platoni de Microsoft" />
+        <figcaption>En TechAI Podcast, entrevistando a Patricio Cofré, LATAM AI &amp; Data Consulting Leader de EY, y a Verónica Platoni, líder de estrategia para AI Business Solutions de Microsoft.</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="work__box">
+  <div class="work__text">
+    <h3>AI Engineer, Samsung Electronics Chile</h3>
+    <p>
+Formé parte del equipo fundador del área de IA de Samsung Electronics Chile.<br>
+Llevé a producción un pipeline con LLM que detecta leads en 500 licitaciones diarias de Mercado Público, con 92% de recall.
     </p>
     <ul class="work__list">
       <li>Python</li>
-      <li>watsonx.ai</li>
-      <li>Habilidades comunicativas</li>
+      <li>LLMs</li>
+      <li>Next.js</li>
+      <li>PostgreSQL</li>
     </ul>
 
     <div class="work__links">
@@ -108,92 +198,120 @@ Esta experiencia me ha permitido fortalecer habilidades técnicas, así como com
         Link a mi LinkedIn <span>&rarr;</span>
       </a>
       <a href="https://www.linkedin.com/in/gianlucacl/" title="Ver LinkedIn" target="_blank">
-        <img src="./images/linkedin.svg" class="work__code" alt="LinkedIn">
+        <img src="./images/linkedin.svg" class="work__code" alt="Ver LinkedIn">
       </a>
     </div>
   </div>
   <div class="work__image-box">
-    <img src="./images/IBMProyecto.jpg" class="work__image" alt="Intern IBM" />
+    <img src="./images/Samsung.jpg" class="work__image" alt="Samsung Electronics Chile" />
   </div>
 </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Proyecto destacado de titulación "NeumonIA" - Universidad del Desarrollo.</h3>
-              <p>
-Proyecto final del diplomado Ciencia de Datos e Inteligencia Artificial de la Universidad del Desarrollo.<br>
-Es un sistema de automatización diagnóstica basado en Deep Learning que procesa y analiza imágenes de rayos X para la detección temprana de neumonía. El modelo implementado permite procesar cientos de radiografías en minutos, una tarea que manualmente tomaría horas al personal médico, mejorando la eficiencia hospitalaria y apoyando la toma de decisiones clínicas críticas.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Data Science</li>
-                <li>Inteligencia Artificial</li>
-                <li>Google Colab</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/GianlucaCL/Proyecto_M7_GianlucaContenla" target="_blank" class="link__text">
-                  Revisa el proyecto <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/GianlucaCL/Proyecto_M7_GianlucaContenla" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/xray.webp" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          
-                    <div class="work__box">
-            <div class="work__text">
-              <h3>Profesor de Python en conjunto con el MIT</h3>
-              <p>
-                Profesor del curso de programación en Python en inglés, dirigido a estudiantes de tercero y cuarto medio, realizado en conjunto con el Massachusetts Institute of Technology (MIT), universidad estadounidense clasificada #1 a nivel mundial, gracias a la alianza UM - MIT.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Google Colab</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://www.diariomayor.cl/creando-universidad/50-escolares-aprendieron-programacion-gracias-a-la-alianza-entre-la-u-mayor-y-el-mit-de-ee-uu" target="_blank" class="link__text">
-                  Revisa la noticia <span>&rarr;</span>
-                </a>
-                <a href="https://www.diariomayor.cl/creando-universidad/50-escolares-aprendieron-programacion-gracias-a-la-alianza-entre-la-u-mayor-y-el-mit-de-ee-uu" title="View Source Code" target="_blank">
-                  <img src="./images/news.svg" class="work__code" alt="Noticias Diario">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/mit.webp" class="work__image" alt="Clases" />
-            </div>
-          </div>
-          <div class="work__box">
+<div class="work__box">
   <div class="work__text">
-    <h3>Organizador FILCE</h3>
+    <h3>Data &amp; AI, equipo Ecosystem de IBM Chile</h3>
     <p>
-      La Fería Internacional de Logística y Comercio Exterior (FILCE) es la feria de logística más grande del país, ayudo a coordinar este evento anual que reúne a los principales actores de la industria logística nacional.<br>
-      Esta experiencia me ha permitido desarrollar habilidades de gestión de proyectos a gran escala, liderazgo de equipos multidisciplinarios y creación de redes estratégicas en el sector empresarial.<br>
-      El evento conecta a más de 3000 profesionales y diversas empresas del rubro cada año, generando oportunidades de negocio y promoviendo la innovación en la cadena de suministro.
+Participé en la entrega técnica a clientes a lo largo del ciclo de venta consultiva: levantamiento de necesidades, demos técnicas y POCs de IA.<br>
+Construí un clasificador híbrido de licitaciones con LLM sobre watsonx.ai que procesaba más de 1.000 licitaciones por semana; sus oportunidades apoyaron el crecimiento de 40% del área.<br>
+También automaticé vía APIs la emisión de más de 100 cartas de autorización y co-desarrollé una app que recomendaba charlas a los asistentes del IBM TechSummit.
+    </p>
+    <ul class="work__list">
+      <li>Python</li>
+      <li>watsonx.ai</li>
+      <li>APIs</li>
+    </ul>
+
+    <div class="work__links">
+      <a href="https://www.linkedin.com/in/gianlucacl/" target="_blank" class="link__text">
+        Link a mi LinkedIn <span>&rarr;</span>
+      </a>
+      <a href="https://www.linkedin.com/in/gianlucacl/" title="Ver LinkedIn" target="_blank">
+        <img src="./images/linkedin.svg" class="work__code" alt="Ver LinkedIn">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="./images/IBMProyecto.jpg" class="work__image" alt="IBM" />
+  </div>
+</div>
+
+<div class="work__box">
+  <div class="work__text">
+    <h3>Profesor asistente de Python junto al MIT</h3>
+    <p>
+Durante dos años consecutivos fui profesor asistente del curso de programación en Python en inglés para estudiantes de tercero y cuarto medio, realizado junto al equipo de Boston del MIT gracias a la alianza entre la Universidad Mayor y el MIT.
+    </p>
+    <ul class="work__list">
+      <li>Python</li>
+      <li>Google Colab</li>
+      <li>Docencia</li>
+    </ul>
+
+    <div class="work__links">
+      <a href="https://www.diariomayor.cl/creando-universidad/50-escolares-aprendieron-programacion-gracias-a-la-alianza-entre-la-u-mayor-y-el-mit-de-ee-uu" target="_blank" class="link__text">
+        Revisa la noticia <span>&rarr;</span>
+      </a>
+      <a href="https://www.diariomayor.cl/creando-universidad/50-escolares-aprendieron-programacion-gracias-a-la-alianza-entre-la-u-mayor-y-el-mit-de-ee-uu" title="Noticia" target="_blank">
+        <img src="./images/news.svg" class="work__code" alt="Noticia">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="./images/mit.webp" class="work__image" alt="Clases de Python con el MIT" />
+  </div>
+</div>
+
+<div class="work__box">
+  <div class="work__text">
+    <h3>Proyecto NeumonIA, Diplomado en Ciencia de Datos e IA (UDD)</h3>
+    <p>
+Proyecto final del diplomado en Ciencia de Datos e Inteligencia Artificial de la Universidad del Desarrollo.<br>
+Es un sistema de apoyo al diagnóstico basado en Deep Learning que analiza radiografías de tórax para detectar neumonía, con 90,5% de accuracy y 91% de F1. El modelo se expone vía API REST en Flask y puede procesar cientos de radiografías en minutos, una tarea que manualmente tomaría horas.
+    </p>
+    <ul class="work__list">
+      <li>Python</li>
+      <li>TensorFlow/Keras</li>
+      <li>Flask</li>
+    </ul>
+
+    <div class="work__links">
+      <a href="https://github.com/GianlucaCL/Proyecto_M7_GianlucaContenla" target="_blank" class="link__text">
+        Revisa el proyecto <span>&rarr;</span>
+      </a>
+      <a href="https://github.com/GianlucaCL/Proyecto_M7_GianlucaContenla" title="Ver código" target="_blank">
+        <img src="./images/github.svg" class="work__code" alt="Ver código">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="./images/xray.webp" class="work__image" alt="Proyecto NeumonIA" />
+  </div>
+</div>
+
+<div class="work__box">
+  <div class="work__text">
+    <h3>Co-organizador, FILCE</h3>
+    <p>
+La Feria Internacional de Logística, Comercio Exterior y E-Commerce (FILCE) es la mayor feria logística de Chile, con más de 50 expositores y 4.000 asistentes.<br>
+Co-organizo este evento anual que reúne a los principales actores de la industria, lo que me ha permitido desarrollar habilidades de gestión de proyectos a gran escala, liderazgo de equipos y creación de redes en el sector empresarial.
     </p>
     <ul class="work__list">
       <li>Gestión de Eventos</li>
       <li>Logística</li>
       <li>Networking Empresarial</li>
     </ul>
-<div class="work__links">
-  <a href="https://www.linkedin.com/company/filce/" target="_blank" class="link__text">
-    Ver FILCE en LinkedIn <span>&rarr;</span>
-  </a>
-  <a href="https://www.linkedin.com/company/filce/" title="LinkedIn FILCE" target="_blank">
-    <img src="./images/linkedin.svg" class="work__code" alt="LinkedIn">
-  </a>
-</div>
+
+    <div class="work__links">
+      <a href="https://www.linkedin.com/company/filce/" target="_blank" class="link__text">
+        Ver FILCE en LinkedIn <span>&rarr;</span>
+      </a>
+      <a href="https://www.linkedin.com/company/filce/" title="LinkedIn FILCE" target="_blank">
+        <img src="./images/linkedin.svg" class="work__code" alt="LinkedIn FILCE">
+      </a>
+    </div>
   </div>
   <div class="work__image-box">
-    <img src="./images/IMG_4583.JPG" class="work__image" alt="FILCE - Feria de Logística" />
+    <img src="./images/IMG_4583.JPG" class="work__image" alt="FILCE" />
   </div>
 </div>
         </div>
@@ -314,17 +432,13 @@ Es un sistema de automatización diagnóstica basado en Deep Learning que proces
           </a>
         </li>
 
-        <li class="footer__social-link-item">
-          <a href="https://www.twitch.tv/rin4bell" title="Link a mi Twitch">
-            <img src="./images/twitch.svg" class="footer__social-image" alt="Twitch">
-          </a>
-        </li>
+
 
       </ul>
 
       <!-- mis c´reditos -->
       <p>
-        &copy; 2025 - Página creada por <a href="https://github.com/GianlucaCL" class="link">Gianluca</a>.
+        &copy; 2026 - Página creada por <a href="https://github.com/GianlucaCL" class="link">Gianluca</a>.
       </p>
       <div class="footer__github-buttons">
         <iframe
